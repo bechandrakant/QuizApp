@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Know India Quiz</string>
+
+    <!-- Question with free text entry -->
+    <string name="question1">Q1. Which country\'s flag is this?</string>
+    <string name="country_hint">Australia</string>
+    <string name="correctAnswer1">India</string>
+    <string name="flag">Flag</string>
+
+    <!-- Question with single correct answer using RadioButton -->
+    <string name="question2">Q2. The ratio of width of Indian National flag to its length is?</string>
+    <string name="q2_option1">2 : 3</string>
+    <string name="q2_option2">2 : 4</string>
+    <string name="q2_option3">3 : 2</string>
+    <string name="q2_option4">3 : 4</string>
+    <string name="correctAnswer2">@string/q2_option1</string>
+
+    <string name="question3">Q3. Statue of Unity is in?</string>
+    <string name="q3_option1">Punjab</string>
+    <string name="q3_option2">Gujarat</string>
+    <string name="q3_option3">Delhi</string>
+    <string name="q3_option4">Maharashtra</string>
+    <string name="correctAnswer3">@string/q3_option2</string>
+
+    <!-- Question with multiple correct answer using checkbox -->
+    <string name="question4">Q4. Which colors are present in Indian Flag?</string>
+    <string name="q4_option1">Red</string>
+    <string name="q4_option2">Saffron</string>
+    <string name="q4_option3">Orange</string>
+    <string name="q4_option4">Green</string>
+    <string name="q4_option5">White</string>
+    <string name="correctAnswer4">SaffronGreenWhite</string>
+
+    <string name="submit">submit</string>
+</resources>
