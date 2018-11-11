@@ -130,8 +130,18 @@ public class MainActivity extends AppCompatActivity {
     public void submit(View v) {
         score = 0;
         checkAnswers();
+
+        String scoreReviewText;
+        if (score == 4) {
+            scoreReviewText = "Awesome! You are a true ninja!" + "\n" + "You have got " +  score + " questions right!";
+        } else if (score == 3) {
+            scoreReviewText = "Good Work!" + "\n" + "You have got " +  score + " questions right!";
+        } else {
+            scoreReviewText = "Please Take the Quiz Again!" + "\n" + "You have got " +  score + " questions right!";
+        }
+
         // Display result via Toast.
-        Toast.makeText(this, "You have got " +  score + " questions right!", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, scoreReviewText, Toast.LENGTH_LONG).show();
     }
 
     /**
@@ -145,22 +155,18 @@ public class MainActivity extends AppCompatActivity {
         // Check if user has got correct answers or not.
         if (userAnswer1.equalsIgnoreCase(getString(R.string.correctAnswer1))) {
             score++;
-            // Toast.makeText(this, userAnswer1, Toast.LENGTH_SHORT).show();
         }
 
         if (userAnswer2.equalsIgnoreCase(getString(R.string.correctAnswer2))) {
             score++;
-            // Toast.makeText(this, userAnswer2, Toast.LENGTH_SHORT).show();
         }
 
         if (userAnswer3.equalsIgnoreCase(getString(R.string.correctAnswer3))) {
             score++;
-            // Toast.makeText(this, userAnswer3, Toast.LENGTH_SHORT).show();
         }
 
         if (userAnswer4.equalsIgnoreCase(getString(R.string.correctAnswer4))) {
             score++;
-            // Toast.makeText(this, userAnswer4, Toast.LENGTH_SHORT).show();
         }
     }
 
